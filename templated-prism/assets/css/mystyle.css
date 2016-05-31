@@ -8,6 +8,29 @@
   padding: 8% 0 0;
   margin: auto;
 }
+
+#menu ul {
+  /*float: right;
+  display: inline-block;*/
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+#menu li {
+  float: right;
+}
+#menu li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#banner {
+  clear: both;
+  overflow: auto;
+}
+
 .form {
   position:right;
   z-index: 1;
