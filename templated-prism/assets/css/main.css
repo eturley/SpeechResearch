@@ -3383,7 +3383,7 @@
 }
 
 .menu .active {
-    background-color: #4CAF50;
+    background-color: #333;
 }
 
 .small_banner {
@@ -3400,3 +3400,89 @@
 	color:white;
 	text-align: center;
 }
+
+/* Accordion Button */
+	button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+	}
+
+	button.accordion.active, button.accordion:hover {
+	    background-color: #ddd;
+	}
+
+	button.accordion:after {
+	    content: '\02795';
+	    font-size: 13px;
+	    color: #777;
+	    float: right;
+	    margin-left: 5px;
+	}
+
+	button.accordion.active:after {
+	    content: "\2796";
+	}
+
+	div.panel {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: 0.6s ease-in-out;
+	    opacity: 0;
+	}
+
+	div.panel.show {
+	    opacity: 1;
+	    max-height: 500px;  
+	}
+
+
+/* Dropdown Menu */
+
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+	li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #17B277;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
