@@ -1682,6 +1682,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		position:center;
 	}
 
 		input[type="submit"].icon,
@@ -3207,7 +3208,7 @@
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
 		background-size: 100px 100px, cover;
 		color: rgba(255, 255, 255, 0.5);
-		padding: 14em 0 4em;
+		padding: 3em 0 4em;
 	}
 
 		#banner h2 {
@@ -3350,56 +3351,57 @@
 
 		}
 
+/* Menu */
+	.menu {
+		z-index:5;
+		width: 100%;
+		position: fixed;
+		font-size: 1.3em;
+	}
 
-.menu {
-	z-index:5;
-	width: 100%;
-	position: fixed;
-	font-size: 1.3em;
-}
+	.menu ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: #333;
+	}
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+	.menu li {
+	    float: left;
+	}
 
-.menu li {
-    float: left;
-}
+	.menu li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
 
-.menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+	.menu li a:hover:not(.active) {
+	    background-color: #111;
+	}
 
-.menu li a:hover:not(.active) {
-    background-color: #111;
-}
+	.menu .active {
+	    background-color: #333;
+	}
 
-.menu .active {
-    background-color: #333;
-}
+/* Small Banner */
+	.small_banner {
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
+		background-size: 30px 30px, cover;
+		color: rgba(255, 255, 255, 0.5);
+		padding: 6em 0 1em;
+	}
 
-.small_banner {
-	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-	background-image: url("images/overlay.png"), linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-	background-size: 30px 30px, cover;
-	color: rgba(255, 255, 255, 0.5);
-	padding: 6em 0 1em;
-}
-
-.small_banner h2 {
-	color:white;
-	text-align: center;
-}
+	.small_banner h2 {
+		color:white;
+		text-align: center;
+	}
 
 /* Accordion Button */
 	button.accordion {
@@ -3445,44 +3447,43 @@
 	    max-height: 500px;  
 	}
 
-
 /* Dropdown Menu */
 
 
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-right: 100px;
-}
-
-	li.dropdown {
-		display: inline-block;
+	.dropbtn {
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    margin-right: 100px;
 	}
 
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #17B277;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	}
+		li.dropdown {
+			display: inline-block;
+		}
 
-	.dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		text-align: left;
-	}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #17B277;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
 
-	.dropdown-content a:hover {
-		background-color: #f1f1f1;
-	}
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
 
